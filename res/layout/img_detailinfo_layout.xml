@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip" >
+
+        <TextView
+            android:id="@+id/tt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/album_image_detail_info_marginLeft"
+            android:layout_marginStart="@dimen/album_image_detail_info_marginLeft"
+            android:text="图片长宽:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/img_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginStart="15.0dip"
+            android:layout_toEndOf="@+id/tt"
+            android:layout_toRightOf="@+id/tt"
+            android:text="600*800"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip" >
+
+        <TextView
+            android:id="@+id/tttt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/album_image_detail_info_marginLeft"
+            android:layout_marginStart="@dimen/album_image_detail_info_marginLeft"
+            android:text="图片大小:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/img_sizek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginStart="15.0dip"
+            android:layout_toEndOf="@+id/tttt"
+            android:layout_toRightOf="@+id/tttt"
+            android:text="1000k"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip" >
+
+        <TextView
+            android:id="@+id/ttt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/album_image_detail_info_marginLeft"
+            android:layout_marginStart="@dimen/album_image_detail_info_marginLeft"
+            android:text="拍摄时间:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/take_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginStart="15.0dip"
+            android:layout_toEndOf="@+id/ttt"
+            android:layout_toRightOf="@+id/ttt"
+            android:text="2015/4/2 15:13:09"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginTop="10.0dip" >
+
+        <!-- <Button -->
+        <!-- android:id="@+id/ok" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentTop="true" -->
+        <!-- android:layout_centerInParent="true" -->
+        <!-- android:text="Ok" /> -->
+    </RelativeLayout>
+
+</LinearLayout>

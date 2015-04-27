@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/album_delete_dialog_shape" >
+
+    <!-- <LinearLayoutv -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="@dimen/album_delete_dialog_height" -->
+    <!-- android:layout_gravity="center" -->
+    <!-- android:layout_marginTop="@dimen/album_delete_img_marginTop" -->
+    <!-- android:orientation="vertical" > -->
+    <!-- <ImageView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_gravity="center" -->
+    <!-- android:contentDescription="@string/nothing" -->
+    <!-- android:src="@drawable/album_delete_img" /> -->
+    <!-- </LinearLayout> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_delete_dialog_height"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/album_delete_img_marginTop"
+        android:layout_marginTop="@dimen/album_delete_img_marginTop"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@id/album_del_btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/album_delete_okBtn_marginLeft"
+            android:layout_marginStart="@dimen/album_delete_okBtn_marginLeft"
+            android:layout_weight="1.0"
+            android:background="@drawable/album_dialog_deletebtn"
+            android:src="@android:drawable/btn_star"
+            android:text="@string/album_delete_okBtn" />
+
+        <Button
+            android:id="@id/album_del_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/album_delete_cancelBtn_marginRight"
+            android:layout_marginLeft="@dimen/album_delete_distance_btn"
+            android:layout_marginRight="@dimen/album_delete_cancelBtn_marginRight"
+            android:layout_marginStart="@dimen/album_delete_distance_btn"
+            android:layout_weight="1.0"
+            android:background="@drawable/album_dialog_delete_cancel_btn"
+            android:src="@android:drawable/btn_star"
+            android:text="@string/album_delete_cancelBtn" />
+    </LinearLayout>
+
+</LinearLayout>

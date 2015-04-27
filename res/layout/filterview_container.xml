@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/horizontalScrollView"
+        android:layout_gravity="center"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/filter_container_top"
+            android:paddingBottom="@dimen/filter_container_bottom"
+            android:paddingLeft="@dimen/filter_container_left"
+            android:paddingStart="@dimen/filter_container_left"
+            android:paddingEnd="@dimen/filter_container_right"
+            android:paddingRight="@dimen/filter_container_right">
+
+            <com.meitu.glcamera.widgets.FilterView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@id/iv_original"
+                android:contentDescription="@string/nothing" />
+
+            <com.meitu.glcamera.widgets.FilterView
+                android:layout_marginLeft="@dimen/filter_container"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@id/iv_Gold"
+                android:contentDescription="@string/nothing" />
+            <!--android:background="@drawable/filter_original"-->
+
+            <com.meitu.glcamera.widgets.FilterView
+                android:layout_marginLeft="@dimen/filter_container"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@id/iv_Vista"
+                android:contentDescription="@string/nothing" />
+            <!--android:background="@drawable/filter_original"-->
+            <com.meitu.glcamera.widgets.FilterView
+                android:layout_marginLeft="@dimen/filter_container"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@id/iv_Iceland"
+                android:contentDescription="@string/nothing" />
+
+            <com.meitu.glcamera.widgets.FilterView
+                android:layout_marginLeft="@dimen/filter_container"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/iv_Solaris"
+                android:contentDescription="@string/nothing" />
+
+            <com.meitu.glcamera.widgets.FilterView
+                android:layout_marginLeft="@dimen/filter_container"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@id/iv_690"
+                android:contentDescription="@string/nothing" />
+
+            <com.meitu.glcamera.widgets.FilterView
+                android:layout_marginLeft="@dimen/filter_container"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@id/iv_across"
+                android:contentDescription="@string/nothing" />
+
+            <!-- <com.meitu.glcamera.widgets.FilterView
+                 android:layout_marginLeft="@dimen/filter_containter"
+                 android:layout_gravity="center"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:id="@id/iv_Gold"
+                 android:contentDescription="@string/nothing"
+                  />-->
+
+            <com.meitu.glcamera.widgets.FilterView
+                android:layout_marginLeft="@dimen/filter_container"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@id/iv_seine"
+                android:contentDescription="@string/nothing" />
+
+            <com.meitu.glcamera.widgets.FilterView
+                android:layout_marginLeft="@dimen/filter_container"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@id/iv_middy"
+                android:contentDescription="@string/nothing" />
+
+            <com.meitu.glcamera.widgets.FilterView
+                android:layout_marginLeft="@dimen/filter_container"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@id/iv_migrant"
+                android:contentDescription="@string/nothing" />
+
+            <com.meitu.glcamera.widgets.FilterView
+                android:layout_marginLeft="@dimen/filter_container"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@id/iv_669"
+                android:contentDescription="@string/nothing" />
+
+            <com.meitu.glcamera.widgets.FilterView
+                android:layout_marginLeft="@dimen/filter_container"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@id/iv_woodStock"
+                android:contentDescription="@string/nothing" />
+
+            <com.meitu.glcamera.widgets.FilterView
+                android:layout_marginLeft="@dimen/filter_container"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@id/iv_Creamy"
+                android:contentDescription="@string/nothing" />
+
+            <com.meitu.glcamera.widgets.FilterView
+                android:layout_marginLeft="@dimen/filter_container"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@id/iv_silver"
+                android:contentDescription="@string/nothing" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+</LinearLayout>

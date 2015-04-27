@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/popupWindow_margin_bottom"
+    android:layout_marginTop="@dimen/popupWindow_margin_top"
+    android:background="@drawable/shape"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dp" >
+
+        <ImageView
+            android:id="@id/ivv_exposure"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/popupWindow_margin_left"
+            android:layout_marginStart="@dimen/popupWindow_margin_left"
+            android:contentDescription="@string/nothing"
+            android:src="@drawable/pg_sdk_edit_lightzone_exposure_selected" />
+
+        <SeekBar
+            android:id="@id/exposure_seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/ivv_exposure"
+            android:layout_toRightOf="@id/ivv_exposure" />
+    </RelativeLayout>
+    <!-- android:progressDrawable="@drawable/seekbar_style" -->
+    <!-- android:thumb="@drawable/thumb_bar" -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginTop="15.0dp" >
+
+        <ImageView
+            android:id="@id/ivv_lightness"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/popupWindow_margin_left"
+            android:layout_marginStart="@dimen/popupWindow_margin_left"
+            android:contentDescription="@string/nothing"
+            android:src="@drawable/ic_sony_zoom_in_click" />
+
+        <SeekBar
+            android:id="@id/scale_seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/ivv_lightness"
+            android:layout_toRightOf="@id/ivv_lightness" />
+    </RelativeLayout>
+    <!-- android:progressDrawable="@color/pink" -->
+    <!-- android:thumb="@drawable/ic_launcher" -->
+    <!-- <RelativeLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginBottom="5.0dp" -->
+    <!-- android:layout_marginTop="15.0dp" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@id/ivv_contrast" -->
+    <!-- android:layout_width="20.0dip" -->
+    <!-- android:layout_height="20.0dip" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:layout_marginLeft="@dimen/popupwindow_margin_left" -->
+    <!-- android:layout_marginStart="@dimen/popupwindow_margin_left" -->
+    <!-- android:contentDescription="@string/nothing" -->
+    <!-- android:src="@drawable/pg_sdk_edit_adjust_contrast_selected" /> -->
+
+
+    <!-- <SeekBar -->
+    <!-- android:id="@id/contrast_seekBar" -->
+
+
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentTop="true" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:layout_marginLeft="10dp" -->
+    <!-- android:layout_marginStart="10dp" -->
+    <!-- android:layout_toEndOf="@id/ivv_contrast" -->
+    <!-- android:layout_toRightOf="@id/ivv_contrast" /> -->
+    <!-- </RelativeLayout> -->
+
+</LinearLayout>

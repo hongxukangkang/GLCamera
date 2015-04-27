@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/take_pic_title_height"
+    android:background="@color/tan" >
+
+    <ImageView
+        android:id="@id/take_pic_main_pager"
+        android:layout_width="@dimen/img_size"
+        android:layout_height="@dimen/img_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="start|center"
+        android:layout_marginLeft="@dimen/take_pic_title_marginLeft"
+        android:layout_marginStart="@dimen/take_pic_title_marginLeft"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/main_pager" />
+
+    <TextView
+        android:id="@id/take_pic_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:text="@string/main_pager_title"
+        android:textColor="@color/hotpink"
+        android:textSize="@dimen/title_size" />
+
+    <ImageView
+        android:id="@id/mode_set"
+        android:layout_width="@dimen/img_size"
+        android:layout_height="@dimen/img_size"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="start|center"
+        android:layout_marginEnd="@dimen/take_pic_title_marginLeft"
+        android:layout_marginRight="@dimen/take_pic_title_marginLeft"
+        android:contentDescription="@string/nothing"
+        android:background="@drawable/home_btn_mode_selector" />
+
+</RelativeLayout>

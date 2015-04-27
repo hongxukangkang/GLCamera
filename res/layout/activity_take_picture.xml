@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/magenta"
+    android:orientation="vertical"
+    tools:context=".GLSurfaceViewActivity" >
+
+    <!-- <com.meitu.glcamera.widgets.CameraGLSurfaceView -->
+    <!-- android:id="@id/glCameraSurfaceView" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_weight="1.0" -->
+
+    <android.opengl.GLSurfaceView
+        android:id="@id/glCameraSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1.0" />
+
+    <LinearLayout
+        android:id="@id/filterContainer"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/antiquewhite"
+        android:gravity="center_vertical" >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="120.0dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@id/formalFilter"
+                    android:layout_width="@dimen/btn_filter_width"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/formal_filter" />
+
+                <Button
+                    android:id="@id/speciaFilter"
+                    android:layout_width="@dimen/btn_filter_width"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/specia_filter" />
+
+                <Button
+                    android:id="@id/grayFilter"
+                    android:layout_width="@dimen/btn_filter_width"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/gray_filter" />
+
+                <Button
+                    android:id="@id/hueFilter"
+                    android:layout_width="@dimen/btn_filter_width"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/hue_filter" />
+
+                <Button
+                    android:id="@id/gammaFilter"
+                    android:layout_width="@dimen/btn_filter_width"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/gamma_filter" />
+                <Button
+                    android:id="@id/invertFilter"
+                    android:layout_width="@dimen/btn_filter_width"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/invert_filter" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_takePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="TakePic" />
+
+    <Button
+        android:id="@+id/btn_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="modeSet" />
+
+</RelativeLayout>

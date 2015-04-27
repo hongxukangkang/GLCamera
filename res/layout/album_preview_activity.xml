@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@id/album_viewpager_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+        <include layout="@layout/album_header" />
+    </LinearLayout>
+
+    <!-- <ViewFlipper -->
+    <!-- android:id="@id/album_viewFlipper" -->
+    <!-- android:layout_width="0.0dip" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_weight="1.0" -->
+    <!-- android:background="@color/black" > -->
+    <!-- </ViewFlipper> -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/album_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/album_viewpager_bottom"
+        android:layout_below="@id/album_viewpager_top"
+        android:layout_centerVertical="true"
+        android:background="@color/blanchedalmond" >
+    </android.support.v4.view.ViewPager>
+
+    <!-- <android.support.v4.view.PagerTitleStrip -->
+    <!-- android:id="@+id/pagertitle" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_gravity="top" -->
+    <!-- android:background="@color/springgreen" /> -->
+
+    <LinearLayout
+        android:id="@id/album_viewpager_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+        <include layout="@layout/album_bottom" />
+    </LinearLayout>
+
+</RelativeLayout>
